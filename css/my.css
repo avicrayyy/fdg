@@ -1,0 +1,277 @@
+#no-margin {
+  margin: auto !important;
+}
+
+  #caro{margin: 0;}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+
+#main-banner {
+  /*height: 500px;*/
+  margin-top: 95px;
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 95px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: black;
+}
+
+header .nav-menu {
+  position: absolute;
+  height: 34px;
+  margin: 35px 0 0 0;
+  bottom: 23px;
+  right: 6%;
+  /*font-family: Monsterrat_Rg, Helvetica, sans-serif;*/
+  font-size: 20px;
+  /*letter-spacing: 0.1em;*/
+}
+
+header .nav-menu ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+header .nav-menu ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+header .nav-menu ul li a {
+  color: #FF8D00;
+  text-decoration: none;
+}
+
+.header-logo img {
+  height: 34px;
+  width: 400px;
+  display: block;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.centered {
+  text-align: center;
+}
+
+iframe {
+  border: black;
+  width: 73%;
+  height: 400px;
+  margin-top: -58px;
+}
+
+strong {
+  color: #A9A9A9 !important;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 350px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #2C2828;
+    color: #FF8D00;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: color 0.2s linear;
+   -webkit-transition: color 0.2s linear;
+   -moz-transition: color 0.2s linear;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #cc7a00;
+    transition: color 0.2s linear;
+   -webkit-transition: color 0.2s linear;
+   -moz-transition: color 0.2s linear;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+/*contact Section*/
+
+form {
+  padding: 100px;
+}
+
+.text-box {
+  width: 100%
+}
+
+.message-box {
+  width: 100.9% !important;
+}
+
+.seperate-textbox {
+  margin-left: 10px;
+}
+.orange-border {
+  border: 1px solid #FF8D00 !important;
+}
+
+input[type="text"] {
+  background-color: #2C2828;
+  color: #FF8D00;
+}
+
+textarea[type="text"] {
+  background-color: #2C2828;
+  color: #FF8D00;
+}
+
+textarea {
+  height: 100px !important;
+}
+
+.m-sm-t {
+  margin-top: 10px;
+}
+
+.main-box p {
+  font-size: 17px;
+  color: #A9A9A9;
+}
+form img {
+  margin-top: 10px;
+}
+form p {
+  margin-top: 10px;
+}
+.fancy-link {
+   text-decoration: none;
+   transition: color 0.2s linear;
+   -webkit-transition: color 0.2s linear;
+   -moz-transition: color 0.2s linear;
+}
+
+.fancy-link:hover {
+   color: gray;
+}
+
+.carousel-indicators .active {
+  color: #FF8D00 !important;
+}
+.orange {
+ color: #FF8D00 !important; 
+}
+
+form {
+  background-color: black;
+}
+
+form ul {
+  text-align: center;
+  padding-top: 0px !important;
+}
+
+form h1 {
+  margin-bottom: 30px;
+}
+
+form ul li {
+  display: inline-block;
+  color: #5A5B5D;
+  width: inherit !important;
+  position: initial !important;
+  float: inherit !important;
+  margin: 0 !important;
+  overflow: inherit !important;
+}
+
+form ul li a {
+  color: #FF8D00;
+  transition: color 0.2s linear;
+ -webkit-transition: color 0.2s linear;
+ -moz-transition: color 0.2s linear;
+ display: inline !important;
+}
+
+form ul li a:before {
+  background: inherit !important;
+}
+
+form ul li a:hover {
+  color: #FF8D00;
+ text-decoration: none;
+}
+
+form ul li::before {
+  color: #FF8D00;  
+  /* color of bullet or square */
+  content: "\2022"; 
+  /* Unicode of character to precede the list item */
+  font-size: 1em; 
+  /* em or %*/ 
+  padding-right: 5px; 
+  /* use em*/
+  position: relative;
+  top: 0em; 
+  /* use em or % */
+}
+
+#no-bullet {
+  list-style-type: none !important;
+}
+
+.carousel-indicators .active {
+  background-color: #FF8D00 !important;
+}
+
+.black {
+  background-color: black;
+  border-top: black !important;
+}
+
+.black p {
+  color: #A9A9A9;
+}
+
+.no-box {
+  background-color: black !important;
+  border: black !important;
+  color: #FF8D00 !important;
+}
+
+body {
+  background-color: black !important;
+}
+
+.opacity {
+  opacity: 1 !important;
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+}
+
+.index-for-indicator {
+  z-index: 9 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  #main-banner {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+/*#main-header {
+  height: 500px;
+  width: 100%;
+}*/
+
