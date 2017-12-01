@@ -46,6 +46,8 @@ header {
   color: #fff;
   text-align: center;
   padding: 30px 0 120px;*/
+  border-bottom: 1px solid #292929;
+  box-shadow: 0px 30px 48px #000;
 }
 header h1 {
   text-align: center;
@@ -78,7 +80,6 @@ header p {
   position: relative;
 }
 .gallery ul li {
-  margin-bottom: 20px;
   width: 23.24561%;
   position: relative;
 }
