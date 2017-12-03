@@ -70,7 +70,7 @@ nav p {
 }
 
 .gallery {
-  padding: 40px 0 50px;
+  padding: 40px 0 0 0px;
   position: relative;
   overflow: hidden;
   background-color: black;
@@ -230,4 +230,32 @@ nav p {
 
 .contact-button:hover{
   color: #ff9800!important;
+}
+
+
+.modal-content{
+  text-align: left;
+}
+
+.modal-footer{
+  text-align: center!important;
+}
+
+.modal-footer button{
+  background-color: #FF8D00;
+  color: white;
+  border-radius: 2px;
+  width: 200px;
+  height: 50px;
+}
+
+@media (min-width: 768px){
+  .modal-dialog {
+      margin: 30px 100px;
+      background: #ff8900;
+  }
+}
+
+.send-btn{
+  margin-top: 10px;
 }

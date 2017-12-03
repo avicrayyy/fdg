@@ -114,7 +114,7 @@ strong {
 
 /*contact Section*/
 
-form {
+section.contact {
   padding: 100px;
 }
 
@@ -134,12 +134,12 @@ form {
 }
 
 input[type="text"] {
-  background-color: #2C2828;
+  background-color: #191919;
   color: #FF8D00;
 }
 
 textarea[type="text"] {
-  background-color: #2C2828;
+  background-color: #191919;
   color: #FF8D00;
 }
 
@@ -181,6 +181,7 @@ form p {
 
 form {
   background-color: black;
+  text-align: center;
 }
 
 form ul {
@@ -231,6 +232,16 @@ form ul li::before {
   position: relative;
   top: 0em; 
   /* use em or % */
+}
+
+form button{
+  background-color: #FF8D00;
+  color: white;
+  border-radius: 2px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+/*  margin-top: 10px;*/
 }
 
 #no-bullet {
