@@ -90,16 +90,16 @@ strong {
     background: #000;
     border-radius: 2px;
     text-decoration: none;
-    transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
-   -webkit-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
-   -moz-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
+    transition: color 0.2s linear, border-color 0.2s linear, background 0.2s, opacity 0.5s;
+   -webkit-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s, opacity 0.5s;
+   -moz-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s, opacity 0.5s;
     opacity: 0;
 }
 #back-to-top:hover {
     background: #191919;
-    transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
-   -webkit-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
-   -moz-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
+    transition: color 0.2s linear, border-color 0.2s linear, background 0.2s, opacity 0.5s;
+   -webkit-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s, opacity 0.5s;
+   -moz-transition: color 0.2s linear, border-color 0.2s linear, background 0.2s, opacity 0.5s;
    border-color: #FF8D00!important; 
    color: #FF8D00;
 }
