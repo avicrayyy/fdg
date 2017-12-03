@@ -49,6 +49,23 @@ if ($('#back-to-top').length) {
 
 // SMOOTH PAGE SCROLL
 
+$("a[href='#home']").click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, "slow")
+});
+
+$("a[href='#gallery']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#gallery").offset().top
+        }, "slow")
+});
+
+$("a[href='#contact']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, "slow")
+});
 
 // PAUSE YOUTUBE WHEN OUT OF MODAL
 

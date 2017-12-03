@@ -41,7 +41,7 @@ a {
   margin-top: -20px;
 }
 
-header {
+nav {
   /*background-color: #84b4b1;
   color: #fff;
   text-align: center;
@@ -49,7 +49,7 @@ header {
   border-bottom: 1px solid #292929;
   box-shadow: 0px 30px 48px #000;
 }
-header h1 {
+nav h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 65px;
@@ -59,13 +59,13 @@ header h1 {
   padding-top: 50px;
   font-family: "Montserrat", sans-serif;
 }
-header h1 span {
+nav h1 span {
   text-transform: uppercase;
   letter-spacing: 7px;
   font-size: 25px;
   line-height: 1;
 }
-header p {
+nav p {
   padding-top: 30px;
 }
 
@@ -221,4 +221,13 @@ header p {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+
+.contact-button{
+  color: #e48e0f!important;
+}
+
+.contact-button:hover{
+  color: #ff9800!important;
 }
