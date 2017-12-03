@@ -87,6 +87,7 @@ strong {
     color: #464748; /*originally: FF8D00*/
     cursor: pointer;
     border: 1px solid #292929;
+    background: #000;
     border-radius: 2px;
     text-decoration: none;
     transition: color 0.2s linear, border-color 0.2s linear, background 0.2s;
