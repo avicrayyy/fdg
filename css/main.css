@@ -232,6 +232,9 @@ nav p {
   color: #ff9800!important;
 }
 
+.modal{
+  z-index: 99999!important;
+}
 
 .modal-content{
   text-align: left;
@@ -251,8 +254,8 @@ nav p {
 
 @media (min-width: 768px){
   .modal-dialog {
-      margin: 30px 100px;
-      background: #ff8900;
+      background: #ff8900!important;
+      width: 90%!important;
   }
 }
 
