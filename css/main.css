@@ -260,5 +260,86 @@ nav p {
 }
 
 .send-btn{
-  margin-top: 10px;
+  margin-top: 40px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.form-control:focus {   
+  border-color: rgba(251, 141, 4, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(251, 141, 4);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(251, 141, 4);
+  outline: 0 none;
+}
+
+footer {
+  margin-bottom: 80px;
+}
+
+footer hr{
+  width: 30%;
+  border-color: #292929;
+}
+
+footer ul {
+  text-align: center;
+  padding-top: 0px !important;
+}
+
+footer h1 {
+  margin-bottom: 30px;
+}
+
+footer ul li {
+  display: inline-block;
+  color: #5A5B5D;
+  width: inherit !important;
+  position: initial !important;
+  float: inherit !important;
+  margin: 0 !important;
+  overflow: inherit !important;
+}
+
+footer ul li a {
+  color: #FF8D00;
+  transition: color 0.2s linear;
+ -webkit-transition: color 0.2s linear;
+ -moz-transition: color 0.2s linear;
+ display: inline !important;
+}
+
+footer ul li a:before {
+  background: inherit !important;
+}
+
+footer ul li a:hover {
+  color: #FF8D00;
+ text-decoration: none;
+}
+
+footer ul li::before {
+  color: #FF8D00;  
+  /* color of bullet or square */
+  content: "\2022"; 
+  /* Unicode of character to precede the list item */
+  font-size: 1em; 
+  /* em or %*/ 
+  padding-right: 5px; 
+  /* use em*/
+  position: relative;
+  top: 0em; 
+  /* use em or % */
 }
