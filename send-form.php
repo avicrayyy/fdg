@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "dsgbdomingo@gmail.com";
-    $email_subject = "Fuse Design Group Mailer";
+    $email_subject = "Fuse Design Group Website Mailer";
  
     function died($error) {
         // your error code can go here
@@ -70,17 +70,10 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
 <!-- include your own success html here -->
- <html>
-   <head>
-      <title>Email Successfully sent</title>
-      <meta http-equiv="refresh" content="5; url='fusedesigngroup.com/website3'">
-   </head>
-   <body>
       <p>Thank you for contacting us! We will be in touch with you very soon.<br>
 
       If not redirected after 5 seconds, <a href="fusedesigngroup.com/website3">click here</a>.</p>
-  </body>
-</html>
+
 <?php
  
 }
