@@ -406,4 +406,8 @@ footer ul li::before {
     border-bottom: 1px solid #292929;
     box-shadow: 0px 30px 48px #000;
   }
+  .navbar-nav {
+    float: left;
+    margin: 24px 0 0 0;
+  }
 }
