@@ -695,7 +695,7 @@
                       <textarea name="message" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*"></textarea>
                 </div>
             <!-- <div class="g-recaptcha" data-sitekey="6LfR_TsUAAAAABFq2EunOXM1YaUh9sp0ywdjDe2-"></div> -->
-                <input type="submit" class="btn btn-secondary send-btn">
+                <input type="submit" class="form-btn btn btn-secondary send-btn">
             </form>
         </section>
 
