@@ -13,6 +13,7 @@
 
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     </head>
     <body>
         <nav>
@@ -644,22 +645,27 @@
         </div>
 
         <section class="contact">
-            <form form action="mailto:info@fusedesigngroup.com" method="post" enctype="text/plain">
-    <div id="contact">
-      <h1 class="orange centered">Contact Us</h1>
-    </div>
-        <div class="input-group text-box placeholder-contact">
-          <input name="name" type="text" class="form-control input-sm orange-border"  placeholder="First Name*" />
-        </div>
-        <div class="input-group text-box placeholder-contact m-sm-t">
-          <input name="mail" type="text" class="form-control input-sm orange-border"  placeholder="Email Address*" />
-        </div>
-        <div class="placeholder-contact message-placeholder-margin ">
-              <textarea name="comment" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*"></textarea>
-        </div>
-        <button type="submit" class="btn btn-secondary send-btn">Send</button>
-      </form>
+            <form action="send-form.php" method="post" enctype="text/plain">
+                <div id="contact">
+                  <h1 class="orange centered">Contact Us</h1>
+                </div>
+                <div class="input-group text-box placeholder-contact">
+                  <!-- <label>Name<a>*</a></label><br> -->
+                  <input name="name" type="text" class="form-control input-sm orange-border"  placeholder="Name*" />
+                </div>
+                <div class="input-group text-box placeholder-contact m-sm-t">
+                  <!-- <label>Email<a>*</a></label> -->
+                  <input name="email" type="text" class="form-control input-sm orange-border"  placeholder="Email Address*" />
+                </div>
+                <div class="placeholder-contact message-placeholder-margin ">
+                      <!-- <label>Message<a>*</a></label> -->
+                      <textarea name="message" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*"></textarea>
+                </div>
+            <!-- <div class="g-recaptcha" data-sitekey="6LfR_TsUAAAAABFq2EunOXM1YaUh9sp0ywdjDe2-"></div> -->
+                <button type="submit" class="btn btn-secondary send-btn">Send</button>
+            </form>
         </section>
+
         <footer>
             <hr>
             <ul>
