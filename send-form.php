@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Message Sent | Fuse Design Group</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/my.css">
+        <link rel="stylesheet" href="css/justifiedGallery.css" />
+        <link rel="stylesheet" href="css/font.css" />
+
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+</head>
+<body>
+    <h1>Message sent! You will be redirected in 5 seconds.</h1>
+     <p>If you didn't get redirected, <a href="index.php">click here</a>.</p>
+</body>
+</html>
+
+
+
+<?php header("refresh:5;url=' index.php'")?>
+
 <?php
 if(isset($_POST['email'])) {
  
@@ -66,16 +93,6 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-?>
- 
-<!-- include your own success html here -->
-      <p>Thank you for contacting us! We will be in touch with you very soon.<br>
-
-      If not redirected after 5 seconds, <a href="fusedesigngroup.com/website3">click here</a>.</p>
-
-<?php
- 
+mail($email_to, $email_subject, $email_message, $headers);  
 }
 ?>
-<?php header("refresh: 5; url='fusedesigngroup.com/website3'"); ?>

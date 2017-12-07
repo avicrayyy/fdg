@@ -645,24 +645,24 @@
         </div>
 
         <section class="contact">
-            <form action="send-form.php" method="post" enctype="text/plain">
+            <form action="send-form.php" method="post">
                 <div id="contact">
                   <h1 class="orange centered">Contact Us</h1>
                 </div>
                 <div class="input-group text-box placeholder-contact">
                   <!-- <label>Name<a>*</a></label><br> -->
-                  <input name="name" type="text" class="form-control input-sm orange-border"  placeholder="Name*" />
+                  <input type="text" name="name" class="form-control input-sm orange-border"  placeholder="Name*" />
                 </div>
                 <div class="input-group text-box placeholder-contact m-sm-t">
                   <!-- <label>Email<a>*</a></label> -->
-                  <input name="email" type="text" class="form-control input-sm orange-border"  placeholder="Email Address*" />
+                  <input type="text" name="email" class="form-control input-sm orange-border"  placeholder="Email Address*" />
                 </div>
                 <div class="placeholder-contact message-placeholder-margin ">
                       <!-- <label>Message<a>*</a></label> -->
-                      <textarea name="message" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*"></textarea>
+                      <textarea type="text" name="message" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*"></textarea>
                 </div>
             <!-- <div class="g-recaptcha" data-sitekey="6LfR_TsUAAAAABFq2EunOXM1YaUh9sp0ywdjDe2-"></div> -->
-                <button type="submit" class="btn btn-secondary send-btn">Send</button>
+                <input type="submit" class="btn btn-secondary send-btn">
             </form>
         </section>
 
