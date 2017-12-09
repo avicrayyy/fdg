@@ -11,8 +11,10 @@
         <link rel="stylesheet" href="css/justifiedGallery.css" />
         <link rel="stylesheet" href="css/font.css" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        
         <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     </head>
     <body>
@@ -67,10 +69,11 @@
                   <div class="scroll-me">
                     <span class="scroll-btn">
                       <a class="scrolly-mouse">
-                        <span class="mouse">
-                          <span class="red-ball">
-                          </span>
-                        </span>
+                        <div class="btn-down">
+                          <a href="#gallery" class="btn btn-circle page-scroll">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
                       </a><br>
                     </span>
                     </div>
@@ -83,7 +86,7 @@
             </div>
         </div>
         </header>
-
+        
         <!-- <div id="caro" class="">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
           
@@ -792,6 +795,7 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://use.fontawesome.com/a0a8872ad0.js"></script>
     <script src="js/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery.justifiedGallery.js"></script>
