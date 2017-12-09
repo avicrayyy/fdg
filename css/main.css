@@ -38,7 +38,6 @@ a {
   float: left;
   /*margin: 0 0.87719%;*/
   overflow: hidden;
-  margin-top: -20px;
 }
 
 nav {
@@ -369,9 +368,13 @@ footer ul li::before {
   outline: none;
 }
 .navbar-custom a {
-  color: #7a7b7d;
   font-size: 1.2em;
 }
+
+.font-gray{
+  color: #7a7b7d;
+}
+
 .navbar-custom .nav li a:hover {
 /*  color: rgba(255, 255, 255, 0.8);*/
   outline: none;
@@ -397,18 +400,185 @@ footer ul li::before {
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
-    -webkit-transition: padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -moz-transition: padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    transition: padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #000;
     border-bottom: 1px solid #292929;
-    box-shadow: 0px 30px 48px #000;
+    box-shadow: 0px 20px 48px 20px #000;
   }
   .navbar-nav {
     float: left;
-    margin: 24px 0 0 0;g
+    margin: 24px 0 0 0;
   }
+}
+
+
+
+
+
+
+
+/*VIDEO BG FOR INDEX*/
+video{
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    background-size: cover;
+    overflow: hidden;
+}
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 95%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3) url("../img/filter.png");
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.description-buttons{
+  margin-top: 25px;
+}
+
+.description-buttons .btn-orange{
+  border: 3px solid #e48d10;
+  border-radius: 2px;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  transition: color 0.5s, background-color 0.5s;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+}
+
+.description-buttons .btn-orange:hover{
+  color: #fff;
+  background-color: #e48d10;
+  border-color: #e48d10;
+  transition: color 0.5s, background-color 0.5s;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+}
+
+.description-buttons .btn-orange:focus{
+  color: #fff;
+  outline-offset: 0px;
+}
+
+.button-1{
+  margin-bottom: 10px;
+}
+
+/* Header */
+
+.jumbotron{
+  height: 95vh;
+      min-height: 300px;
+      background: url('../img/bg-homepage.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+      background-size: cover;
+      background-color: #000000;
+}
+
+.vertical-center{
+  float: none;
+    margin: 0 auto;
+}
+
+header{
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header h1{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.shadow{
+  text-shadow: 4px 4px 8px black;
+}
+
+.left{
+  text-align: center;
+}
+
+.left a{
+  width: 200px;
+}
+
+mark{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.left mark{
+  vertical-align: 21px;
 }
