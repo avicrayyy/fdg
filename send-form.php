@@ -101,7 +101,7 @@
       }
       ?>
        If not redirected after 5 seconds, <a class="a-msg" href="index.php">click here</a>.</p>
-      <?php header("refresh: 5; url='fusedesigngroup.com/website3'"); ?>
+      <?php header("refresh: 5; url='index.php'"); ?>
       </div>
     </div>
   </div>
