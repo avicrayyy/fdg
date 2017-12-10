@@ -872,3 +872,30 @@ span.mouse{
   -moz-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+
+
+
+
+/*MESSAGE SENT*/
+.center-msg{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.h1-msg{
+  font-size: 4em;
+  font-weight: bold;
+  color: #f7941f;
+}
+
+.p-msg{
+  color: #636465;
+}
+
+.logo-msg{
+  width: 400px;
+}
+
+.a-msg{
+  color: #f7941f;
+}

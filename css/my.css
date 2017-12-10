@@ -235,13 +235,21 @@ form ul li::before {
 }
 
 form .form-btn{
-  background-color: #FF8D00;
+  background: #FF8D00;
   color: white;
   border-radius: 2px;
   width: 200px;
   height: 50px;
   text-align: center;
+  transition: background 0.5s;
 /*  margin-top: 10px;*/
+}
+
+form .form-btn:hover{
+  color: #fff;
+  text-decoration: none;
+  background: orange;
+  transition: background 0.5s;
 }
 
 #no-bullet {
