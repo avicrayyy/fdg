@@ -24,7 +24,8 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         Menu <i class="fa fa-bars"></i>
                     </button>
-                    <a href="#"><img src="imgs/fdg_logo_01.png"></a>
+                    <a href="#"><img src="imgs/fdg_logo_02.png" class="logo"></a>
+                    <a href="#"><img src="imgs/fdg_logo_01.png" class="logo-c"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,7 +51,7 @@
             <!-- /.container -->
         </nav>
 
-        <header><!-- video bg -->
+        <header id="#home"><!-- video bg -->
           <div class="homepage-hero-module">
             <div class="video-container">
                 <div class="title-container">
@@ -61,7 +62,7 @@
                     <div class="description">
                         <div class="inner"><em>Visualize and understand your ideas with us!</em></div>
                          <div class="description-buttons">
-                            <div class="button-1"><a href="#" class="btn btn-orange">Learn More</a></div>
+                            <div class="button-1"><a href="#contact" class="btn btn-orange">Get in touch!</a></div>
                           </div>
                     </div>
                 </div>
@@ -710,15 +711,15 @@
                 </div>
                 <div class="input-group text-box placeholder-contact">
                   <!-- <label>Name<a>*</a></label><br> -->
-                  <input name="name" type="text" class="form-control input-sm orange-border"  placeholder="Name*" />
+                  <input name="name" type="text" class="form-control input-sm orange-border"  placeholder="Name*" required="required" />
                 </div>
                 <div class="input-group text-box placeholder-contact m-sm-t">
                   <!-- <label>Email<a>*</a></label> -->
-                  <input name="email" type="text" class="form-control input-sm orange-border"  placeholder="Email Address*" />
+                  <input name="email" type="text" class="form-control input-sm orange-border"  placeholder="Email Address*" required="required" />
                 </div>
                 <div class="placeholder-contact message-placeholder-margin ">
                       <!-- <label>Message<a>*</a></label> -->
-                      <textarea name="message" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*"></textarea>
+                      <textarea name="message" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*" required="required"></textarea>
                 </div>
             <!-- <div class="g-recaptcha" data-sitekey="6LfR_TsUAAAAABFq2EunOXM1YaUh9sp0ywdjDe2-"></div> -->
                 <input type="submit" class="form-btn btn btn-secondary send-btn">
