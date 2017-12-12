@@ -234,7 +234,7 @@ form ul li::before {
   /* use em or % */
 }
 
-form .form-btn{
+.form-btn{
   background: #FF8D00;
   color: white;
   border-radius: 2px;
@@ -245,7 +245,7 @@ form .form-btn{
 /*  margin-top: 10px;*/
 }
 
-form .form-btn:hover{
+.form-btn:hover{
   color: #fff;
   text-decoration: none;
   background: orange;
