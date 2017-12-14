@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="navbar-header nav-logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        Menu <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars"></i>
                     </button>
                     <a href="index.php"><img src="imgs/fdg_logo_02.png" class="logo"></a>
                     <a href="index.php"><img src="imgs/fdg_logo_01.png" class="logo-c"></a>
@@ -36,7 +36,7 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll fancy-link" href="#home">Home</a>
+                            <a class="fancy-link" href="#home">Home</a>
                         </li>
                         <li>
                             <a class="page-scroll fancy-link" href="#gallery">Work</a>
@@ -141,13 +141,12 @@
         </footer>
         <!-- SCROLL ICON -->
         <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
-        <!-- </section> / projects -->
 
         <!--Modals-->
 
          <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+              <div class="privacy-modal modal-dialog" role="document">
                 <div class="modal-content">
                   
                   <div class="modal-body black">

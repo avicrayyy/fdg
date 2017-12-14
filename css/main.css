@@ -238,6 +238,11 @@ nav p {
   z-index: 99999!important;
 }
 
+.modal-header{
+  padding: 70px 0 0 0;
+  border: none;
+}
+
 .modal-content{
   text-align: left;
 }
@@ -257,8 +262,68 @@ nav p {
 @media (min-width: 768px){
   .modal-dialog {
       background: #ff8900!important;
-      width: 90%!important;
+
   }
+  .privacy-modal{
+    width: 90%;
+  }
+}
+
+.gallery .modal {
+  padding: 0!important;
+  background: #000;
+}
+
+.modal-exit{
+  position: absolute;
+  right: 12px;
+  font-size: 4em;
+  background: none;
+  border: none;
+  top: 5px;
+}
+
+.modal-left{
+  position: absolute;
+  left: 0;
+  font-size: 3.5em;
+  background: none;
+  border: none;
+  top: 50%;
+}
+
+.modal-right{
+  position: absolute;
+  right: 0;
+  font-size: 3.5em;
+  background: none;
+  border: none;
+  top: 50%;
+}
+
+.gallery-modal{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+.gallery-modal .modal-content{
+  text-align: center;
+}
+
+.gallery-modal .modal-content{
+    height: 100%;
+    border: none;
+    border-radius: 0px;
+    color: #636465;
+    background: #000;
+    box-shadow: none;
+  }
+
+.gallery-modal .modal-footer{
+  border: none;
+  bottom: 0;
+  width: 100%;
 }
 
 .send-btn{
@@ -289,6 +354,7 @@ input[type="color"]:focus,
 
 footer {
   margin-bottom: 80px;
+  padding: 10px;
 }
 
 footer hr{
@@ -299,6 +365,8 @@ footer hr{
 footer ul {
   text-align: center;
   padding-top: 0px !important;
+  padding: 0;
+  margin: 0;
 }
 
 footer h1 {
@@ -354,12 +422,14 @@ footer ul li::before {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #f8f8f8;
 }
+
 .navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
+  background-color: #000;
+  font-size: 22px;
+  margin-top: 17px;
+  padding: 15px;
+  border: 1px solid #363738;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
@@ -377,6 +447,7 @@ footer ul li::before {
 
 .font-gray{
   color: #7a7b7d;
+  transition: color 0.3s;
 }
 
 .navbar-custom .nav li a:hover {
@@ -714,7 +785,7 @@ span.mouse{
 
 
 /*Arrow down bouncy*/
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 480px) {
     .scroll-btn{
       display: none;
     }
@@ -965,4 +1036,26 @@ span.mouse{
 }
 .hvrbox.active .hvrbox-text_mobile {
       display: block;
+}
+
+
+/*Mobile Responsive*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .navbar-collapse{
+    background: #000;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .navbar-header{
+    color: white;
+    transition: color 0.2s;
+  }
+}
+
+.opn-menu{
+  background: #191919;
+  border-color: #FF8D00!important;
+  color: #FF8D00!important;
+  transition: border-color 0.2s, color 0.2s;
 }

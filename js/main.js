@@ -1,32 +1,24 @@
 $(document).ready(function(){
-
-
-    var img = new Image();
-    img.src = "../img/intro-bg.jpg";
-    img.onload = function( ) {
-        $('h1.brand-heading').css('display', 'none');
-        $('h1.brand-heading').fadeIn(1000);
-    }
-    /*! Fades in intro on load */
-        
-
         function collapseNavbar() {
         if ($(".navbar").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
+            $(".navbar-header button").addClass("font-gray");
             $(".navbar-custom a").addClass("font-gray");
             $(".logo").css("display", "none");
             $(".logo-c").css("display", "block");
 
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            $(".navbar-header button").removeClass("font-gray");
             $(".navbar-custom a").removeClass("font-gray");
             $(".logo").css("display", "block");
             $(".logo-c").css("display", "none");
         }
     }
-
+    
     $(window).scroll(collapseNavbar);
     $(document).ready(collapseNavbar);
+
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
@@ -40,6 +32,7 @@ $(document).ready(function(){
     });
 
     // Closes the Responsive Menu on Menu Item Click
+
     $('.navbar-collapse ul li a').click(function() {
         $(".navbar-collapse").collapse('hide');
     });
@@ -90,7 +83,7 @@ $(document).ready(function(){
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
-            }, 700);
+            }, "slow");
         });
     }
 
@@ -99,6 +92,7 @@ $(document).ready(function(){
     $("a[href='#home']").click(function() {
             $('html, body').animate({
                 scrollTop: 0
+                // scrollTop: $("#home").offset().top
             }, "slow")
     });
 
@@ -108,11 +102,17 @@ $(document).ready(function(){
             }, "slow")
     });
 
-    $("a[href='#contact']").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#contact").offset().top
-            }, "slow")
-    });
+    // $("a[href='#contact']").click(function() {
+    //         $('html, body').animate({
+    //             scrollTop: $("#contact").offset().top
+    //         }, "slow")
+    // });
+
+    // $(".button-1 a[href='#contact']").click(function() {
+    //         $('html, body').animate({
+    //             scrollTop: $("#contact").offset().top
+    //         }, "slow")
+    // });
 
      //for video bg-index
     scaleVideoContainer();
@@ -195,4 +195,31 @@ function scaleBannerVideoSize(element){
     });
 }
 
+// $( "#target" ).toggle(function() {
+//   alert( "First handler for .toggle() called." );
+// }, function() {
+//   alert( "Second handler for .toggle() called." );
+// });
+
+
+function hamburgerColor(){
+    $(".navbar-header button" ).click(function() {
+      $(this).toggleClass("opn-menu");
+    });
+
+    $("li .fancy-link").click(function(){
+        $(".navbar-header button").removeClass("opn-menu");
+    });
+    // if (menuOpen != 1) {
+    //     $(".navbar-header button").click(function(){
+    //         $(".navbar-header button").removeClass("opn-menu");
+    //         menuOpen = 1;
+    //     });
+    // }   
+}
+
+    $(window).scroll(hamburgerColor);
+    $(document).ready(hamburgerColor);
+
 });
+
