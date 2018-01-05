@@ -281,6 +281,16 @@ nav p {
   background: none;
   border: none;
   top: 5px;
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+}
+
+.modal-exit:hover{
+  color: #FF8D00;
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
 }
 
 .modal-left{
@@ -414,6 +424,9 @@ footer ul li::before {
   /* use em or % */
 }
 
+footer ul li:first-child:before {
+  content: none;
+}
 
 /*nav*/
 
@@ -454,6 +467,7 @@ footer ul li::before {
 /*  color: rgba(255, 255, 255, 0.8);*/
   outline: none;
   background-color: transparent;
+  color: #ff9600;
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -491,14 +505,12 @@ footer ul li::before {
   }
 }
 
-
-
-
-
-
+video{
+  width: auto;
+}
 
 /*VIDEO BG FOR INDEX*/
-video{
+header video{
     position: absolute; 
     right: 0; 
     bottom: 0;

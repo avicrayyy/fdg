@@ -95,7 +95,7 @@
           <?php include("includes/gallery.html");?>
           <?php include("includes/modals.html");?>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact row" id="contact">
             <form action="send-form.php" method="post">
                 <div class="contact-section">
                   <h1 class="orange centered">Contact Us</h1>
