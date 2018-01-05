@@ -467,12 +467,12 @@ footer ul li:first-child:before {
 /*  color: rgba(255, 255, 255, 0.8);*/
   outline: none;
   background-color: transparent;
-  color: #ff9600;
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   outline: none;
   background-color: transparent;
+    color: #ff9600;
 }
 .navbar-custom .nav li.active {
   outline: none;
