@@ -1,3 +1,11 @@
+#nprogress .bar,
+#nprogress .spinner {
+    z-index: 999999;
+    }
+
+#nprogress .bar{
+  background: orange;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -507,6 +515,8 @@ footer ul li:first-child:before {
 
 video{
   width: auto;
+  max-width:500px;
+  height:auto;
 }
 
 /*VIDEO BG FOR INDEX*/

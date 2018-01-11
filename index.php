@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
         
         <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     </head>
@@ -113,7 +114,7 @@
                       <textarea name="message" type="text" class="message-box form-control m-sm-t message-box orange-border" placeholder="Message*" required="required"></textarea>
                 </div>
             <!-- <div class="g-recaptcha" data-sitekey="6LfR_TsUAAAAABFq2EunOXM1YaUh9sp0ywdjDe2-"></div> -->
-                <input type="submit" class="form-btn btn btn-secondary send-btn">
+                <input type="submit" class="form-btn btn btn-secondary send-btn" value="Submit">
             </form>
         </section>
 
@@ -182,8 +183,8 @@
             </div>
 
         <!--End of Modals-->
-
     </body>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://use.fontawesome.com/a0a8872ad0.js"></script>
