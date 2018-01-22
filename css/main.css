@@ -22,6 +22,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: #333;
+  padding: 0px!important;
 }
 
 a {
@@ -336,6 +337,7 @@ nav p {
     color: #636465;
     background: #000;
     box-shadow: none;
+    overflow-y: auto;
   }
 
 .gallery-modal .modal-footer{
@@ -1080,4 +1082,35 @@ span.mouse{
   border-color: #FF8D00!important;
   color: #FF8D00!important;
   transition: border-color 0.2s, color 0.2s;
+}
+
+
+
+/*Scroll bar*/
+
+body::-webkit-scrollbar {
+    width: .3em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #f7941f;
+  outline: 1px solid #ba7209;
+}
+
+
+.modal-content::-webkit-scrollbar {
+    width: .3em;
+}
+ 
+.modal-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #f7941f;
+  outline: 1px solid #ba7209;
 }

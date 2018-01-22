@@ -177,6 +177,12 @@ function hamburgerColor(){
         });
     });
 
+    $( ".pause-2a" ).click(function() {
+        $( "video" ).each(function() {
+            if ($(".video1")[0].paused) $(".video1")[0].play();    // play if not playing
+        });
+    });
+
     $( "button.modal-exit.me-1" ).click(function() {
         $( "video" ).each(function() {
             if (!$(".video1")[0].paused) $(".video1")[0].pause();    // pause if playing
@@ -189,9 +195,27 @@ function hamburgerColor(){
         });
     });
 
+    $( ".pause-1" ).click(function() {                                       // onclick of > of modal 1, pause video
+        $( "video" ).each(function() {
+            if (!$(".video1")[0].paused) $(".video1")[0].pause();    // pause if playing
+        });
+    });
+
 //Play and Pause video2 in gallery
 
     $( ".hb-2" ).click(function() {
+        $( "video" ).each(function() {
+            if ($(".video2")[0].paused) $(".video2")[0].play();    // play if not playing
+        });
+    });
+
+    $( ".pause-1" ).click(function() {                                   // onclick of > of modal 1, play video2
+        $( "video" ).each(function() {
+            if ($(".video2")[0].paused) $(".video2")[0].play();    // play if not playing
+        });
+    });
+
+    $( ".pause-3a" ).click(function() {                                   // onclick of < of modal 3, play video2
         $( "video" ).each(function() {
             if ($(".video2")[0].paused) $(".video2")[0].play();    // play if not playing
         });
@@ -209,5 +233,37 @@ function hamburgerColor(){
         });
     });
 
+    $( ".pause-2a" ).click(function() {
+        $( "video" ).each(function() {
+            if (!$(".video2")[0].paused) $(".video2")[0].pause();    // pause if playing
+        });
+    });
+
+    $( ".pause-2b" ).click(function() {
+        $( "video" ).each(function() {
+            if (!$(".video2")[0].paused) $(".video2")[0].pause();    // pause if playing
+        });
+    });
 });
 
+//Scroll lock glitch modals fix
+
+$( "button.modal-left" ).click(function() {
+        $( "body" ).css("overflow", "hidden");
+});
+
+$( "button.modal-right" ).click(function() {
+        $( "body" ).css("overflow", "hidden");
+});
+
+$( ".hvrbox" ).click(function() {
+        $( "body" ).css("overflow", "hidden");
+});
+
+$( "button.modal-exit" ).click(function() {
+        $( "body" ).css("overflow", "auto");
+});
+
+$( ".modal-footer>button" ).click(function() {
+        $( "body" ).css("overflow", "auto");
+});

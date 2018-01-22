@@ -18,7 +18,27 @@
         
         <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     </head>
+  <!--   <style>
+        .no-js #loader { display: none;  }
+        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999999;
+            background: url(images/loader-64x/Preloader_2.gif) center no-repeat #000;
+        }
+    </style>
+    <script>
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+    </script> -->
     <body>
+        <!-- <div class="se-pre-con"></div> -->
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header nav-logo">
